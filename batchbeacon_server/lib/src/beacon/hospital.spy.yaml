@@ -1,0 +1,11 @@
+class: Hospital
+table: hospitals
+fields:
+  name: String
+  city: String
+  organizationType: String
+  status: String
+indexes:
+  hospital_name:
+    fields: name
+    unique: true

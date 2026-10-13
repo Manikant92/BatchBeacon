@@ -1,0 +1,8 @@
+class: InboundSupply
+table: inbound_supplies
+fields:
+  hospitalId: int, relation(parent=hospitals)
+  medicineId: int, relation(parent=medicines)
+  quantity: int
+  expectedArrivalDate: DateTime
+  confirmationStatus: String

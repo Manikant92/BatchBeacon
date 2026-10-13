@@ -1,0 +1,19 @@
+class: RescueProposal
+table: rescue_proposals
+fields:
+  sourceHospitalId: int, relation(parent=hospitals)
+  destinationHospitalId: int, relation(parent=hospitals)
+  medicineId: int, relation(parent=medicines)
+  inventoryBatchId: int, relation(parent=inventory_batches)
+  proposedQuantity: int
+  expiryDate: DateTime
+  proposedArrivalAt: DateTime
+  status: String
+  forecastReferenceId: int, relation(parent=shortage_forecasts)
+  explanation: String
+  requestKey: String
+  createdAt: DateTime
+indexes:
+  proposal_request:
+    fields: destinationHospitalId, requestKey
+    unique: true

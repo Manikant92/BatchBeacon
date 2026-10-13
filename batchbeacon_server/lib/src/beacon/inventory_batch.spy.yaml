@@ -1,0 +1,17 @@
+class: InventoryBatch
+table: inventory_batches
+fields:
+  hospitalId: int, relation(parent=hospitals)
+  medicineId: int, relation(parent=medicines)
+  batchNumber: String
+  quantityOnHand: int
+  quantityReserved: int
+  expiryDate: DateTime
+  storageStatus: String
+  qualityStatus: String
+  lastUpdatedAt: DateTime
+  version: int
+indexes:
+  batch_identity:
+    fields: hospitalId, medicineId, batchNumber
+    unique: true

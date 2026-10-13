@@ -1,0 +1,5 @@
+class: BeaconEvent
+fields:
+  hospitalId: int
+  category: String
+  timestamp: DateTime

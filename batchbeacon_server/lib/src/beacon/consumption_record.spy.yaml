@@ -1,0 +1,11 @@
+class: ConsumptionRecord
+table: consumption_records
+fields:
+  hospitalId: int, relation(parent=hospitals)
+  medicineId: int, relation(parent=medicines)
+  date: DateTime
+  quantityUsed: int
+indexes:
+  consumption_day:
+    fields: hospitalId, medicineId, date
+    unique: true

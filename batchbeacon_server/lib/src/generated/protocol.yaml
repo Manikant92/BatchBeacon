@@ -1,0 +1,27 @@
+emailIdp:
+  - login:
+  - startRegistration:
+  - verifyRegistrationCode:
+  - finishRegistration:
+  - startPasswordReset:
+  - verifyPasswordResetCode:
+  - finishPasswordReset:
+  - hasAccount:
+jwtRefresh:
+  - refreshAccessToken:
+beacon:
+  - demoOrganizations:
+  - organizationAudit:
+  - setDemoOrganizationStatus:
+  - me:
+  - dashboard:
+  - findRescueOptions:
+  - propose:
+  - act:
+  - watch:
+  - importInventory:
+  - recordConsumption:
+  - updatePolicy:
+  - investigate:
+demo:
+  - enter:

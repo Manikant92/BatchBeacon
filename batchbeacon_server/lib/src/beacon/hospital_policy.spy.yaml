@@ -1,0 +1,14 @@
+class: HospitalPolicy
+table: hospital_policies
+fields:
+  hospitalId: int, relation(parent=hospitals)
+  safetyStockDays: int
+  minimumRemainingShelfLifeDays: int
+  permittedShareCategories: List<String>
+  transferApprovalRequired: bool
+  transitDays: int
+  forecastHorizonDays: int
+indexes:
+  policy_hospital:
+    fields: hospitalId
+    unique: true

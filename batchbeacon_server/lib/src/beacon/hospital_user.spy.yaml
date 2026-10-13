@@ -1,0 +1,11 @@
+class: HospitalUser
+table: hospital_users
+fields:
+  authUserId: UuidValue
+  hospitalId: int, relation(parent=hospitals)
+  role: String
+  status: String
+indexes:
+  membership_auth:
+    fields: authUserId
+    unique: true

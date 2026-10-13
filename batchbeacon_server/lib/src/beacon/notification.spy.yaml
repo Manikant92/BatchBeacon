@@ -1,0 +1,10 @@
+class: Notification
+table: notifications
+fields:
+  hospitalId: int, relation(parent=hospitals)
+  userId: UuidValue?
+  title: String
+  message: String
+  category: String
+  isRead: bool
+  createdAt: DateTime

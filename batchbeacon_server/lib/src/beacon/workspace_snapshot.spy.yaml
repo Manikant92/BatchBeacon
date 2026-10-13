@@ -1,0 +1,13 @@
+class: WorkspaceSnapshot
+fields:
+  hospital: Hospital
+  membership: HospitalUser
+  policy: HospitalPolicy
+  medicines: List<Medicine>
+  batches: List<InventoryBatch>
+  consumption: List<ConsumptionRecord>
+  forecasts: List<ShortageForecast>
+  proposals: List<RescueProposal>
+  events: List<TransferEvent>
+  audit: List<AuditEvent>
+  notifications: List<Notification>

@@ -1,0 +1,12 @@
+class: ShortageForecast
+table: shortage_forecasts
+fields:
+  hospitalId: int, relation(parent=hospitals)
+  medicineId: int, relation(parent=medicines)
+  calculatedAt: DateTime
+  averageDailyConsumption: double
+  projectedRunoutDate: DateTime?
+  daysOfCover: double
+  requiredQuantity: int
+  riskLevel: String
+  forecastMethod: String

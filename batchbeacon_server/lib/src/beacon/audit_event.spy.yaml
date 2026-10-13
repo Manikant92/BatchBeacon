@@ -1,0 +1,11 @@
+class: AuditEvent
+table: audit_events
+fields:
+  hospitalId: int, relation(parent=hospitals)
+  actorId: UuidValue
+  entityType: String
+  entityId: int
+  action: String
+  timestamp: DateTime
+  previousState: String
+  newState: String

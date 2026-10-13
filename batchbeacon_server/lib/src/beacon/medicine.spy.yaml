@@ -1,0 +1,15 @@
+class: Medicine
+table: medicines
+fields:
+  canonicalProductCode: String
+  displayName: String
+  manufacturer: String
+  strength: String
+  dosageForm: String
+  packSize: int
+  storageCategory: String
+  demoRegulatoryClass: String
+indexes:
+  product_code:
+    fields: canonicalProductCode
+    unique: true

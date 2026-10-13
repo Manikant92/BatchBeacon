@@ -1,0 +1,51 @@
+# Tool caches and generated build output
+**/.dart_tool/
+**/build/
+**/.serverpod/
+**/.pub/
+**/.pub-cache/
+**/.packages
+**/.flutter-plugins*
+batchbeacon_server/web/app/
+.scloud/
+*.zip
+*.log
+*.db
+*.db-*
+*.sqlite*
+
+# Credentials and local environment
+**/config/passwords*.yaml
+**/config/*secret*.json
+**/config/firebase_service_account_key.json
+.env
+.env.*
+*.pem
+*.key
+
+# Editor and machine-local files
+.vscode/
+**/.idea/
+**/*.iml
+**/*.ipr
+**/*.iws
+.DS_Store
+Thumbs.db
+.codex/
+.agents/
+.claude/
+.gemini/
+.cursor/
+.mcp.json
+pubspec_overrides.yaml
+
+# Private working notes and demo/operator handoff documents
+/screenshots/
+/AGENTS.md
+/ADMIN_ACCESS.md
+/CLEAN_ADMIN_ACCESS.md
+/DEMO_GUIDE.md
+/ARCHITECTURE.md
+/HACKATHON_SUBMISSION.md
+/PROGRESS.md
+/TEST_REPORT.md

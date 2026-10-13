@@ -1,0 +1,8 @@
+class: TransferEvent
+table: transfer_events
+fields:
+  proposalId: int, relation(parent=rescue_proposals)
+  eventType: String
+  actorId: UuidValue
+  timestamp: DateTime
+  metadata: String

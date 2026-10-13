@@ -1,0 +1,11 @@
+class: RescueCandidate
+fields:
+  hospitalName: String
+  hospitalId: int
+  batchId: int
+  eligible: bool
+  maximumQuantity: int
+  donorRetained: int
+  reason: String
+  expiryDate: DateTime
+  arrivalAt: DateTime

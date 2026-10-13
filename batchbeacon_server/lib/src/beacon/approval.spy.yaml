@@ -1,0 +1,13 @@
+class: Approval
+table: approvals
+fields:
+  proposalId: int, relation(parent=rescue_proposals)
+  hospitalId: int, relation(parent=hospitals)
+  reviewerId: UuidValue
+  decision: String
+  timestamp: DateTime
+  note: String
+indexes:
+  approval_side:
+    fields: proposalId, hospitalId
+    unique: true

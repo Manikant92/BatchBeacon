@@ -1,0 +1,12 @@
+class: StockReservation
+table: stock_reservations
+fields:
+  proposalId: int, relation(parent=rescue_proposals)
+  inventoryBatchId: int, relation(parent=inventory_batches)
+  quantity: int
+  status: String
+  expiresAt: DateTime
+indexes:
+  reservation_proposal:
+    fields: proposalId
+    unique: true
